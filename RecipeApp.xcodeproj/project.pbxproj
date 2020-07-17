@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C5714A24C2234100D323DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5714924C2234100D323DD /* LoginViewController.swift */; };
+		18C5714C24C2235F00D323DD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5714B24C2235F00D323DD /* SignupViewController.swift */; };
 		3D34E3C924BF6AFA007D1D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E3C824BF6AFA007D1D91 /* AppDelegate.swift */; };
-		3D34E3CB24BF6AFA007D1D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E3CA24BF6AFA007D1D91 /* ViewController.swift */; };
 		3D34E3CE24BF6AFA007D1D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34E3CC24BF6AFA007D1D91 /* Main.storyboard */; };
 		3D34E3D024BF6AFA007D1D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D34E3CF24BF6AFA007D1D91 /* Assets.xcassets */; };
 		3D34E3D324BF6AFA007D1D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34E3D124BF6AFA007D1D91 /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18C5714924C2234100D323DD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18C5714B24C2235F00D323DD /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3D34E3C524BF6AFA007D1D91 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D34E3C824BF6AFA007D1D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D34E3CA24BF6AFA007D1D91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D34E3CD24BF6AFA007D1D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D34E3CF24BF6AFA007D1D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D34E3D224BF6AFA007D1D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,8 @@
 		3D34E3BC24BF6AFA007D1D91 = {
 			isa = PBXGroup;
 			children = (
+				18C5714924C2234100D323DD /* LoginViewController.swift */,
+				18C5714B24C2235F00D323DD /* SignupViewController.swift */,
 				3D34E3C724BF6AFA007D1D91 /* RecipeApp */,
 				3D34E3DC24BF6AFB007D1D91 /* RecipeAppTests */,
 				3D34E3E724BF6AFB007D1D91 /* RecipeAppUITests */,
@@ -98,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				3D34E3C824BF6AFA007D1D91 /* AppDelegate.swift */,
-				3D34E3CA24BF6AFA007D1D91 /* ViewController.swift */,
 				3D34E3CC24BF6AFA007D1D91 /* Main.storyboard */,
 				3D34E3CF24BF6AFA007D1D91 /* Assets.xcassets */,
 				3D34E3D124BF6AFA007D1D91 /* LaunchScreen.storyboard */,
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D34E3CB24BF6AFA007D1D91 /* ViewController.swift in Sources */,
+				18C5714A24C2234100D323DD /* LoginViewController.swift in Sources */,
+				18C5714C24C2235F00D323DD /* SignupViewController.swift in Sources */,
 				3D34E3C924BF6AFA007D1D91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -443,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
