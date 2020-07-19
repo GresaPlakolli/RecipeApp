@@ -53,10 +53,10 @@ enum Menus : String {
         }
         switch menu {
         case .foodRecipes:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "foodPage")
-            vc.modalPresentationStyle = .overFullScreen
-            present(vc,animated: true)
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //let vc = storyboard.instantiateViewController(withIdentifier: "foodPage")
+            //vc.modalPresentationStyle = .overFullScreen
+            //present(vc,animated: true)
             
             print("Food")
         default:
@@ -64,6 +64,7 @@ enum Menus : String {
         
     }
     }
+    
 }
     
 

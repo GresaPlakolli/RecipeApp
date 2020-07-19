@@ -10,40 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="YEu-h1-Qwc">
-            <objects>
-                <viewController storyboardIdentifier="foodPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jfy-Cn-lxx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vIl-G2-JD6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FOOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-lo-SSK">
-                                <rect key="frame" x="146" y="230" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="oIb-c9-X8N"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VVV-wG-wD7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4145" y="-1411"/>
-        </scene>
-        <!--View Controller-->
+        <!--HOME-->
         <scene sceneID="zJn-l7-pcV">
             <objects>
-                <viewController storyboardIdentifier="homePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R9a-lV-mg5" customClass="ViewController" customModule="RecipeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HOME" id="R9a-lV-mg5" customClass="ViewController" customModule="RecipeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oEy-be-NeR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-RM-8Ux">
-                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wt2-4F-HDF">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -60,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1a-IA-2aP">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.8942033264405248" blue="0.73572762481335818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="u95-sv-eEa"/>
@@ -68,10 +44,11 @@
                                         <state key="normal" title="Food Recipe"/>
                                         <connections>
                                             <action selector="menuTapped:" destination="R9a-lV-mg5" eventType="touchUpInside" id="VGp-5i-tuQ"/>
+                                            <segue destination="HmA-3t-UPa" kind="show" id="TOd-K4-GDK"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPH-d2-Gqt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.8942033264405248" blue="0.73572762481335818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="uH8-SV-ahL"/>
@@ -81,19 +58,20 @@
                                             <action selector="menuTapped:" destination="R9a-lV-mg5" eventType="touchUpInside" id="63B-Q3-Mqr"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLN-X7-VJA">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLN-X7-VJA">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.8942033264405248" blue="0.73572762481335818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="gg7-p5-yBy"/>
                                         </constraints>
-                                        <state key="normal" title="About"/>
+                                        <state key="normal" title="Top 5 Dishes"/>
                                         <connections>
                                             <action selector="menuTapped:" destination="R9a-lV-mg5" eventType="touchUpInside" id="riT-c0-5sd"/>
+                                            <segue destination="YqL-PA-LoP" kind="show" id="q20-6S-U0H"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-Z2-xKR">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.8942033264405248" blue="0.73572762481335818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="sDK-UO-3X4"/>
@@ -126,6 +104,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cvq-1z-eCz"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="zMW-kD-B25"/>
                     <connections>
                         <outletCollection property="menuButtons" destination="M1a-IA-2aP" collectionClass="NSMutableArray" id="kY6-oF-6PL"/>
                         <outletCollection property="menuButtons" destination="PPH-d2-Gqt" collectionClass="NSMutableArray" id="Xhn-lr-Bx8"/>
@@ -135,7 +114,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KiL-6j-ezE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5238" y="-1247"/>
+            <point key="canvasLocation" x="6199" y="-1451"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bgA-hf-L29">
+            <objects>
+                <viewController id="YqL-PA-LoP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igy-V7-ZVb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wCF-z7-hwv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22d-df-H4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7055" y="-2113"/>
+        </scene>
+        <!--DETAIL-->
+        <scene sceneID="QFM-Z4-hed">
+            <objects>
+                <viewController title="DETAIL" id="HmA-3t-UPa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZbN-5f-szh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8B-2u-IfV">
+                                <rect key="frame" x="166" y="268" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KLU-nn-qKa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cl-5G-BZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7058" y="-1446"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -252,6 +270,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLU-Ah-JVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4711" y="-562"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5gR-hV-ZdV">
+            <objects>
+                <navigationController storyboardIdentifier="homePage" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nyv-tv-o0t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L9W-eZ-ZGE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="R9a-lV-mg5" kind="relationship" relationship="rootViewController" id="TGr-f8-xWL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctn-0Q-X0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5521" y="-1451"/>
         </scene>
     </scenes>
 </document>
