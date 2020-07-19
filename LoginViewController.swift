@@ -21,6 +21,10 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func loginTapped(_ sender: Any) {
+        let storyboard1 = UIStoryboard(name: "Main", bundle: nil)
+        let vc1 = storyboard1.instantiateViewController(withIdentifier: "homePage")
+        vc1.modalPresentationStyle = .overFullScreen
+        present(vc1,animated: true)
     }
     
     @IBAction func createAccountTapped(_ sender: Any) {
