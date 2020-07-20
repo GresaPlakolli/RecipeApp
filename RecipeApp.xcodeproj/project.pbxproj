@@ -12,6 +12,9 @@
 		18E0DDF724C5C28100A7E1E2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DDF624C5C28100A7E1E2 /* CustomTableViewCell.swift */; };
 		18E0DDF924C5C98A00A7E1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E0DDF824C5C98A00A7E1E2 /* Assets.xcassets */; };
 		18E0DDFB24C6352A00A7E1E2 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DDFA24C6352A00A7E1E2 /* About.swift */; };
+		18E0DDFD24C6419100A7E1E2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DDFC24C6419000A7E1E2 /* AboutViewController.swift */; };
+		18E0DDFF24C642FF00A7E1E2 /* infoAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DDFE24C642FF00A7E1E2 /* infoAboutUs.swift */; };
+		18E0DE0124C644B400A7E1E2 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DE0024C644B400A7E1E2 /* DBHelper.swift */; };
 		3D34E3C924BF6AFA007D1D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34E3C824BF6AFA007D1D91 /* AppDelegate.swift */; };
 		3D34E3CE24BF6AFA007D1D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34E3CC24BF6AFA007D1D91 /* Main.storyboard */; };
 		3D34E3D324BF6AFA007D1D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34E3D124BF6AFA007D1D91 /* LaunchScreen.storyboard */; };
@@ -42,6 +45,9 @@
 		18E0DDF624C5C28100A7E1E2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		18E0DDF824C5C98A00A7E1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E0DDFA24C6352A00A7E1E2 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		18E0DDFC24C6419000A7E1E2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		18E0DDFE24C642FF00A7E1E2 /* infoAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoAboutUs.swift; sourceTree = "<group>"; };
+		18E0DE0024C644B400A7E1E2 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		3D34E3C524BF6AFA007D1D91 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D34E3C824BF6AFA007D1D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D34E3CD24BF6AFA007D1D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				18E0DDF824C5C98A00A7E1E2 /* Assets.xcassets */,
+				18E0DE0024C644B400A7E1E2 /* DBHelper.swift */,
 				3D34E3C824BF6AFA007D1D91 /* AppDelegate.swift */,
 				3D34E3CC24BF6AFA007D1D91 /* Main.storyboard */,
 				3D34E3D124BF6AFA007D1D91 /* LaunchScreen.storyboard */,
@@ -112,6 +119,8 @@
 				18E0DDEE24C4E1FB00A7E1E2 /* TableViewController.swift */,
 				18E0DDF624C5C28100A7E1E2 /* CustomTableViewCell.swift */,
 				18E0DDFA24C6352A00A7E1E2 /* About.swift */,
+				18E0DDFC24C6419000A7E1E2 /* AboutViewController.swift */,
+				18E0DDFE24C642FF00A7E1E2 /* infoAboutUs.swift */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -268,11 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E0DDFD24C6419100A7E1E2 /* AboutViewController.swift in Sources */,
 				18E0DDFB24C6352A00A7E1E2 /* About.swift in Sources */,
 				18E0DDF724C5C28100A7E1E2 /* CustomTableViewCell.swift in Sources */,
+				18E0DDFF24C642FF00A7E1E2 /* infoAboutUs.swift in Sources */,
 				18755D3524C3B7010038C307 /* ViewController.swift in Sources */,
 				18E0DDEF24C4E1FB00A7E1E2 /* TableViewController.swift in Sources */,
 				3D34E3C924BF6AFA007D1D91 /* AppDelegate.swift in Sources */,
+				18E0DE0124C644B400A7E1E2 /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

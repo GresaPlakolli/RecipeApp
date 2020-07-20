@@ -10,10 +10,10 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+   
     @IBOutlet weak var cellView: UIView!
     
     @IBOutlet weak var foodImage: UIImageView!
-    
     
     @IBOutlet weak var foodlbl: UILabel!
     override func awakeFromNib() {

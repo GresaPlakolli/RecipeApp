@@ -63,12 +63,14 @@ enum Menus : String {
     }
     
     @IBAction func onClickAbout(_ sender: Any) {
-        showAlert(title: "Welcome", message: "This is a free app")
+        showAlert(title: "Welcome", message: "Here are some info about this app's developers.")
     }
     
     @IBAction func onCtop5(_ sender: Any) {
          showAlert(title: "Attention", message: "Here are only the Top 5 dishes, and not their recipes. You can find them in the Food Recipe Menu!")
     }
+    
+    
     
     
 }
