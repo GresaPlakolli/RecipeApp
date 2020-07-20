@@ -53,10 +53,7 @@ enum Menus : String {
         }
         switch menu {
         case .foodRecipes:
-            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            //let vc = storyboard.instantiateViewController(withIdentifier: "foodPage")
-            //vc.modalPresentationStyle = .overFullScreen
-            //present(vc,animated: true)
+           
             
             print("Food")
         default:
@@ -64,6 +61,15 @@ enum Menus : String {
         
     }
     }
+    
+    @IBAction func onClickAbout(_ sender: Any) {
+        showAlert(title: "Welcome", message: "This is a free app")
+    }
+    
+    @IBAction func onCtop5(_ sender: Any) {
+         showAlert(title: "Attention", message: "Here are only the Top 5 dishes, and not their recipes. You can find them in the Food Recipe Menu!")
+    }
+    
     
 }
     
