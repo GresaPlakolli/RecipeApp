@@ -68,6 +68,7 @@
                                         <state key="normal" title="Top 5 Dishes"/>
                                         <connections>
                                             <action selector="menuTapped:" destination="R9a-lV-mg5" eventType="touchUpInside" id="riT-c0-5sd"/>
+                                            <action selector="onCtop5:" destination="R9a-lV-mg5" eventType="touchUpInside" id="OMd-lt-BBn"/>
                                             <segue destination="OCO-tt-MKP" kind="show" id="fXx-mI-Ot2"/>
                                         </connections>
                                     </button>
@@ -80,6 +81,7 @@
                                         <state key="normal" title="About"/>
                                         <connections>
                                             <action selector="menuTapped:" destination="R9a-lV-mg5" eventType="touchUpInside" id="BeO-bl-I61"/>
+                                            <action selector="onClickAbout:" destination="R9a-lV-mg5" eventType="touchUpInside" id="uRd-Jc-4G9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -116,64 +118,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KiL-6j-ezE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6199" y="-1451"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="RecipeApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHN-N3-2Xa">
-                                <rect key="frame" x="164" y="75" width="46" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Uu-Ro-xZN">
-                                <rect key="frame" x="62" y="130" width="238" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-Lg-tsd">
-                                <rect key="frame" x="62" y="185" width="238" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDd-CE-dFR">
-                                <rect key="frame" x="148" y="225" width="38" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUb-sF-B6J"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycA-8n-1Tt">
-                                <rect key="frame" x="114" y="286" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create Account"/>
-                                <connections>
-                                    <action selector="createAccountTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMj-lc-dXO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="email" destination="7Uu-Ro-xZN" id="tYx-yY-hnC"/>
-                        <outlet property="password" destination="UrC-Lg-tsd" id="NN3-VO-a4Y"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="4068" y="-561"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5gR-hV-ZdV">
@@ -316,7 +260,7 @@
                                                 <rect key="frame" x="8" y="3225" width="359" height="188"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pancakes" translatesAutoresizingMaskIntoConstraints="NO" id="Fdv-HI-yp4">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pancakes" translatesAutoresizingMaskIntoConstraints="NO" id="Fdv-HI-yp4">
                                                 <rect key="frame" x="9" y="1240" width="359" height="188"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -614,6 +558,7 @@ Put one of the cakes on a serving plate and spread with half the icing. Top with
     </scenes>
     <resources>
         <image name="Chicken" width="2000" height="2500"/>
+        <image name="Pancakes" width="500" height="454"/>
         <image name="Risotto" width="767" height="639"/>
         <image name="cake1" width="500" height="454"/>
         <image name="cake2" width="500" height="454"/>
@@ -623,7 +568,6 @@ Put one of the cakes on a serving plate and spread with half the icing. Top with
         <image name="fishRecipe" width="400" height="400"/>
         <image name="lazagna" width="500" height="454"/>
         <image name="mozarela" width="500" height="454"/>
-        <image name="pancakes" width="500" height="454"/>
         <image name="risottoRecipe" width="767" height="639"/>
         <image name="spaghettiRecipe" width="440" height="400"/>
         <image name="sushiRecipe" width="512" height="384"/>
